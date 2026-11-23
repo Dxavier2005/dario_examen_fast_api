@@ -23,5 +23,4 @@ class MateriaActualizar(BaseModel):
 
 
 class Materia(MateriaCrear):
-    """Lo que la API devuelve: los cinco campos completos."""
-    
+    """Lo que la API devuelve: completar el numero de salas que va ver en el cine."""
