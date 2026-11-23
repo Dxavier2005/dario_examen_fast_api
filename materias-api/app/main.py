@@ -1,9 +1,6 @@
-# app/main.py
 from fastapi import FastAPI
 
-app = FastAPI(title="API de Materias", version="1.0.0")
+from app.salas import router as salas_router
 
-
-@app.get("/")
-def raiz() -> dict:
-    return {"api": "materias", "docs": "/docs"}
+app = FastAPI(title="API Cine - Salas", version="1.0.0")
+app.include_router(salas_router)
